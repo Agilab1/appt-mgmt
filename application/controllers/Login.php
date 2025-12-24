@@ -6,8 +6,16 @@ class Login extends CI_Controller {
     {
          parent::__construct();
     }
-    public function index()
-	{
+
+    public function index(){
+        $this->load->view('incld/header');
+        $this->load->view('Login/login');
+        $this->load->view('incld/jslib');
+        $this->load->view('incld/script');
+        $this->load->view('incld/footer');
+    }
+
+    public function register(){
         $this->load->view('incld/header');
         $this->load->view('incld/top_menu');
         $this->load->view('incld/side_menu');
@@ -17,8 +25,4 @@ class Login extends CI_Controller {
         $this->load->view('incld/script');
         $this->load->view('incld/footer');
 	}
-
-    // public function add(){
-        // $this->load->view('Login/form');
-    // }
 }

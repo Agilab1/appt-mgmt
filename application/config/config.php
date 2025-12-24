@@ -23,8 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-// $config['base_url'] = 'https://agilesaptech.com/appt-mgmt/';
-$config['base_url'] = 'http://localhost/appt-mgmt';
+$config['base_url'] = 'https://agilesaptech.com/appt-mgmt/';
+// $config['base_url'] = 'http://localhost/appt-mgmt';
 
 
 /*
