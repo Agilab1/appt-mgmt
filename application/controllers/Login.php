@@ -25,4 +25,5 @@ class Login extends CI_Controller {
         $this->load->view('incld/script');
         $this->load->view('incld/footer');
 	}
+    
 }
