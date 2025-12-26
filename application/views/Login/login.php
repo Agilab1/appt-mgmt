@@ -18,26 +18,42 @@
                                 <?= $this->session->flashdata('success'); ?>
                             </div>
                         <?php endif; ?>
-                        <form> 
-                        <!-- action="<?= base_url('user/login') ?>" method="POST"> -->
+                        <form action="<?= base_url('login/auth') ?>" method="POST">
+
+
                             <div class="form-group">
                                 <label for="mail_id">Email ID</label>
-                                <input type="email" id="mail_id" name="mail_id" class="form-control" placeholder="Enter your email">
+                                <input type="email"
+                                    id="mail_id"
+                                    name="mail_id"
+                                    class="form-control"
+                                    placeholder="Enter your email"
+                                    required>
                                 <small class="text-danger"><?= form_error('mail_id'); ?></small>
                             </div>
 
                             <div class="form-group">
                                 <label for="pass_wd">Password</label>
-                                <input type="password" id="pass_wd" name="pass_wd" class="form-control" placeholder="Enter password">
+                                <input type="password"
+                                    id="pass_wd"
+                                    name="pass_wd"
+                                    class="form-control"
+                                    placeholder="Enter password"
+                                    required>
                                 <small class="text-danger"><?= form_error('pass_wd'); ?></small>
                             </div>
 
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    Login
+                                </button>
                             </div>
-                            <p><a href="#"><span>Forgot Password ?</span></a></p>
-                            <p> If User is new <span><a href="<?= base_url('login/register') ?>">Register</a></span></p>
+
+                            <p><a href="#">Forgot Password ?</a></p>
+                            <p>If User is new <a href="<?= base_url('login/register') ?>">Register</a></p>
+
                         </form>
+
                     </div>
                 </div>
             </div>
